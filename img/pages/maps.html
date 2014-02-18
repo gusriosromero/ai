@@ -1,0 +1,57 @@
+<html>
+<head>
+  <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+  <script type='text/javascript'>
+   google.load('visualization', '1', {'packages': ['geomap']});
+   google.setOnLoadCallback(drawMap);
+
+    function drawMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['Departamento', 'Telefono'],
+        
+        //Regiones Con Cobertura
+        ['PY-11', 1],
+        ['PY-12',1],
+        ['PY-7',1],
+        ['PY-10',1],
+        ['PY-14',1],
+        ['PY-13',1],
+
+        //Regiones Sin Cobertura
+        ['PY-1','0'],
+        ['PY-2','0'],
+        ['PY-3','0'],
+        ['PY-4','0'],
+        ['PY-5','0'],
+        ['PY-6','0'],
+        ['PY-8','0'],
+        ['PY-9','0'],
+        ['PY-15','0'],
+        ['PY-16','0'],
+        ['PY-19','0'],
+
+      ]);
+
+      var options = {      
+        backgroundColor:{fill:'red'},
+        backgroundColor:{strokeWidth:'blue'}
+      };
+      options['region'] = 'PY';
+
+      options['colors'] = [0xF69220, 0xF69220,0xF69220,0xF69220,0xF69220,0xF69220, 0X878787, 0X878787, 0X878787, 0X878787, 0X878787, 0X878787, 0X878787, 0X878787, 0X878787, 0X878787, 0X878787]; //orange colors
+      
+      options['dataMode'] = 'regions';
+
+      var container = document.getElementById('map_canvas');
+      var geomap = new google.visualization.GeoMap(container);
+      geomap.draw(data, options);
+    };
+
+  </script>
+</head>
+
+<body>
+    <div id='map_canvas'></div>
+</body>
+
+</html>
