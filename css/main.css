@@ -1,68 +1,35 @@
+@media screen and (min-width: 1px) and (max-width: 768px) {
+    h1{
+      font-size: 1.5em !important;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    h1{
+      font-size: 4em !important;
+    }
+}
+ 
+@media screen and (min-width: 992px) {
+    h1 {
+      font-size: 4em !important;
+    }
+}
+
+/*.carousel-caption h1{
+    color: red;
+}*/
+
+div h1 {
+  font-size: 3em;
+  font-weight: bold;
+  /*text-align: left;*/
+}
 footer{
 	background-color: #878787;
 	color: white; 
 	font-size: 10px;
 }
-
-.boton_texto{
-	font-size: 12px;
-	text-decoration: none;
-}
-
-.btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
-}
-
-
-.btn-gris a {
-	color: #FFFFFF;
-	text-decoration: none;
-}
-
-.btn-nar a {
-	color: #FFFFFF;
-	text-decoration: none;
-}
-
-.centrar{
-	padding-top: 20px;
-	padding-left: 100px;
-}
-
-.img-fondo {
-	background: rgba(246,146,32,1);
-	padding-top: 0.5em;
-}
-
-.logo_chico{
-	padding-top: -20px;
-}
-
-.spacer {
-    padding: 5px 30px;
-}
-
-.spacer2{
-	padding: 0px 20px;
-}
-
-.socialbutton{
-	color: #FFFFFF;
-	/*background-color: #454547;*/
-	background-color: #5D5D5D;
-
-}
-
-.spacer {
-    padding: 5px 30px;
-}
-
-.spacer2{
-	padding: 0px 20px;
-}
-
 
 /*Boton Gris Customizado*/
 .btn-gris { 
@@ -134,8 +101,8 @@ fieldset[disabled] .btn-gris.active {
 } 
  
 .rojo{
-	border-width: 10px;
-	border-color: red;
+  border-width: 10px;
+  border-color: red;
 }
 .btn-nar:hover, 
 .btn-nar:focus, 
@@ -177,6 +144,98 @@ fieldset[disabled] .btn-nar.active {
   background-color: #FFFFFF; 
 }
 /*********************************************************/
+.boton_texto{
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+
+.btn-gris a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.btn-gris:hover a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.btn-nar a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.btn-nar:hover a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.centrar{
+	padding-top: 20px;
+	padding-left: 100px;
+}
+
+.img-fondo {
+	
+  background: rgba(246,146,32,1);
+	padding-top: 0.5em;
+  z-index:1;
+}
+
+.img_container{
+    float: left;
+    position: relative;
+}
+
+.logo_chico{
+	padding-top: -20px;
+}
+
+.spacer {
+    padding: 5px 30px;
+}
+
+.spacer2{
+	padding: 0px 20px;
+}
+
+.socialbutton{
+	color: #FFFFFF;
+	/*background-color: #454547;*/
+	background-color: #5D5D5D;
+
+}
+
+.spacer {
+    padding: 5px 30px;
+}
+
+.spacer2{
+	padding: 0px 20px;
+}
+
+/*
+.imgOverlay{
+  position: absolute;
+} */
+
+.text_overlay{
+{
+    display:block;
+    position:absolute;
+    width:100%;
+    top:30%;
+    left:0;
+    z-index:2;
+    text-align:center;
+}
+
 #map-canvas {
         height: 100%;
         margin: 0px;
