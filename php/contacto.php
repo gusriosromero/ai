@@ -5,20 +5,21 @@
 	$asunto = $_POST['asunto'];
 	$mensaje = $_POST['mensaje'];
 
-	echo $nombre;
 	$para = 'griosrom@gmail.com';
 
 	$header = 'From: ' . $correo;
-	$msjCorreo = "Nombre: $nombre.' '.$apellido\n E-Mail: correo\n Mensaje:\n $mensaje";
-	  
-	if ($_POST['submit']) {
+	$msjCorreo = "Nombre: $nombre".' '."$apellido\n E-Mail: $correo\n Mensaje:\n $mensaje";
+
+	if (isset($_POST['submit'])) {
 		if (mail($para, $asunto, $msjCorreo, $header)) {
+			// header("Location:../pages/contactos.html?message=Successful Submission! Thankyou for contacting us.");
 			echo "<script language='javascript'>
-			alert('Mensaje enviado, muchas gracias.');
-			window.location.href = 'http://www.agenciaintegral.com.py';
+			alert('Mensaje enviado, gracias por contactarnos.');
+			window.location.href = 'http://www.ai.gitech.com.py';
 			</script>";
-			} else {
-			echo 'Falló el envio';
+		} else 
+		{
+		// header("Location:../contact.php?msg=Error To send Email !");
 		}
 	}
 ?>

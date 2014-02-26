@@ -1,3 +1,4 @@
+
 /*!
  * Bootstrap v3.1.0 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
@@ -5571,7 +5572,7 @@ button.close {
   right: 15%;
   bottom: 20px;
   left: 15%;
-  z-index: 10;
+  z-index: 1;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;

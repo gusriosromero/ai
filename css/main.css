@@ -16,14 +16,9 @@
     }
 }
 
-/*.carousel-caption h1{
-    color: red;
-}*/
-
 div h1 {
   font-size: 3em;
   font-weight: bold;
-  /*text-align: left;*/
 }
 footer{
 	background-color: #878787;
@@ -86,7 +81,6 @@ fieldset[disabled] .btn-gris.active {
 
 /*********************************************************/
 
-
 /*Boton Naranja Customizado*/
 .btn-nar { 
   color: #FFFFFF; 
@@ -99,11 +93,7 @@ fieldset[disabled] .btn-gris.active {
   padding: 1em 0em;
   width: 100%;
 } 
- 
-.rojo{
-  border-width: 10px;
-  border-color: red;
-}
+
 .btn-nar:hover, 
 .btn-nar:focus, 
 .btn-nar:active, 
@@ -237,25 +227,13 @@ fieldset[disabled] .btn-nar.active {
 }
 
 #map-canvas {
-        height: 100%;
-        margin: 0px;
-        padding: 0px
-      }
-
-#map-canvas {
-        height: 100%;
-        margin: 0px;
-        padding: 0px
-      }
+  position: fixed;
+  width:100%;
+/*  height:80%;
+  margin: 0px;
+  padding: 0px;*/
+}
 
 #p_home{
 	width: 80%;
-}
-    
-.color1{
-	background-color: #FA5858
-}
-
-.color2{
-	background-color: #8A4B08
 }
